@@ -1,17 +1,14 @@
 import { View, Text, Stylesheet } from 'react-native';
+import PlacesList from '../components/Places/PlacesList';
 
 
 function AllPlaces() {
     return (
         <View>
-            <Text>All Places</Text>
+            <PlacesList />
         </View>
     );
 
 }
 
 export default AllPlaces;
-
-const styles = Stylesheet.create({
-
-});
