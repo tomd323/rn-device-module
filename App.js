@@ -7,6 +7,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import AddPlace from './screens/AddPlace';
 import AllPlaces from './screens/AllPlaces';
 import Map from './screens/Map';
+import PlaceDetails from './screens/PlaceDetails';
 
 import IconButton from './components/UI/IconButton';
 import { Colors } from './constants/colors';
@@ -78,6 +79,13 @@ export default function App() {
           <Stack.Screen
             name="Map"
             component={Map}
+          />
+          <Stack.Screen
+            name="PlaceDetails"
+            component={PlaceDetails}
+            options={{
+              title: 'Loading Place...',
+            }}
           />
         </Stack.Navigator>
       </NavigationContainer>

@@ -61,10 +61,12 @@ export async function fetchPlaces() {
 }
 
 export async function fetchPlaceDetails(id) {
+
     const dbPlace = await database.getFirstAsync(
         'SELECT * FROM places WHERE id = ?',
         [id]
     );
+
     const place = new Place(
         dbPlace.title,
         dbPlace.imageUri,
